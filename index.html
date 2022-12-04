@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture Indetification</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <center>
+        <section id="header">
+            <h1><b><u>Gesture identification</u></b></h1>
+            <h3>&#128077;|&#9996;|&#128076;</h3>
+        </section>
+        <br>
+        <br>
+        <div id="camera"></div>
+        <br>
+        <button onclick="capture()" class="btn btn-warning">Capture</button>
+        <span id="hand-ges-icon"></span>
+        <span id="hand-ges-name"></span>
+        <br>
+        <div id="result"></div>
+        <br>
+        <button class="btn btn-primary" onclick="check()">Identify</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </center>
+</body>
+</html>
